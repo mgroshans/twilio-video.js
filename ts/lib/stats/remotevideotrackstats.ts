@@ -1,6 +1,6 @@
 'use strict';
 
-var RemoteTrackStats = require('./remotetrackstats');
+import RemoteTrackStats = require('./remotetrackstats');
 
 /**
  * Statistics for a {@link VideoTrack}.
@@ -47,4 +47,4 @@ class RemoteVideoTrackStats extends RemoteTrackStats {
   }
 }
 
-module.exports = RemoteVideoTrackStats;
+export = RemoteVideoTrackStats;

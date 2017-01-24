@@ -1,6 +1,6 @@
 'use strict';
 
-var LocalTrackStats = require('./localtrackstats');
+import LocalTrackStats = require('./localtrackstats');
 
 /**
  * Statistics for a {@link LocalAudioTrack}.
@@ -37,5 +37,4 @@ class LocalAudioTrackStats extends LocalTrackStats {
  * range of 0 to 32767 inclusive.
  * @typedef {number} AudioLevel
  */
-
-module.exports = LocalAudioTrackStats;
+export = LocalAudioTrackStats;

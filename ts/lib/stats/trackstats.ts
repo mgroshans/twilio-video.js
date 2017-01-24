@@ -12,7 +12,7 @@
  * @constructor
  */
 class TrackStats {
-  constructor(trackId, statsReport) {
+  constructor(trackId: string, statsReport) {
     if (typeof trackId !== 'string') {
       throw new Error('Track id must be a string');
     }
@@ -46,4 +46,4 @@ class TrackStats {
   }
 }
 
-module.exports = TrackStats;
+export = TrackStats;

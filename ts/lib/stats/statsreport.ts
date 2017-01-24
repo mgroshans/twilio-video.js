@@ -1,9 +1,9 @@
 'use strict';
 
-var LocalAudioTrackStats = require('./localaudiotrackstats');
-var LocalVideoTrackStats = require('./localvideotrackstats');
-var RemoteAudioTrackStats = require('./remoteaudiotrackstats');
-var RemoteVideoTrackStats = require('./remotevideotrackstats');
+import LocalAudioTrackStats = require('./localaudiotrackstats');
+import LocalVideoTrackStats = require('./localvideotrackstats');
+import RemoteAudioTrackStats = require('./remoteaudiotrackstats');
+import RemoteVideoTrackStats = require('./remotevideotrackstats');
 
 /**
  * Statistics report for an RTCPeerConnection.
@@ -54,4 +54,4 @@ class StatsReport {
   }
 }
 
-module.exports = StatsReport;
+export = StatsReport;

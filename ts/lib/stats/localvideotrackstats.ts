@@ -1,6 +1,6 @@
 'use strict';
 
-var LocalTrackStats = require('./localtrackstats');
+import LocalTrackStats = require('./localtrackstats');
 
 /**
  * Statistics for a {@link LocalVideoTrack}.
@@ -76,4 +76,4 @@ class LocalVideoTrackStats extends LocalTrackStats {
   }
 }
 
-module.exports = LocalVideoTrackStats;
+export = LocalVideoTrackStats;
