@@ -12,7 +12,7 @@ import LocalTrackStats = require('./localtrackstats');
  * @constructor
  */
 class LocalAudioTrackStats extends LocalTrackStats {
-  constructor(trackId, statsReport) {
+  constructor(trackId: string, statsReport) {
     super(trackId, statsReport);
 
     Object.defineProperties(this, {

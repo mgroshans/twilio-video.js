@@ -14,7 +14,7 @@ import TrackStats = require('./trackstats');
  * @constructor
  */
 class LocalTrackStats extends TrackStats {
-  constructor(trackId, statsReport) {
+  constructor(trackId: string, statsReport) {
     super(trackId, statsReport);
 
     Object.defineProperties(this, {

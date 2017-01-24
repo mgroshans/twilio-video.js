@@ -14,7 +14,7 @@ import LocalTrackStats = require('./localtrackstats');
  * @constructor
  */
 class LocalVideoTrackStats extends LocalTrackStats {
-  constructor(trackId, statsReport) {
+  constructor(trackId: string, statsReport) {
     super(trackId, statsReport);
 
     var captureDimensions = null;

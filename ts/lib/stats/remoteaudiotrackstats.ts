@@ -12,7 +12,7 @@ import RemoteTrackStats = require('./remotetrackstats');
  * @constructor
  */
 class RemoteAudioTrackStats extends RemoteTrackStats {
-  constructor(trackId, statsReport) {
+  constructor(trackId: string, statsReport) {
     super(trackId, statsReport);
 
     Object.defineProperties(this, {

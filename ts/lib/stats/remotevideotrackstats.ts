@@ -12,7 +12,7 @@ import RemoteTrackStats = require('./remotetrackstats');
  * @constructor
  */
 class RemoteVideoTrackStats extends RemoteTrackStats {
-  constructor(trackId, statsReport) {
+  constructor(trackId: string, statsReport) {
     super(trackId, statsReport);
 
     var dimensions = null;

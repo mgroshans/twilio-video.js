@@ -16,7 +16,7 @@ import RemoteVideoTrackStats = require('./remotevideotrackstats');
  * @constructor
  */
 class StatsReport {
-  constructor(peerConnectionId, statsResponse) {
+  constructor(peerConnectionId: string, statsResponse) {
     if (typeof peerConnectionId !== 'string') {
       throw new Error('RTCPeerConnection id must be a string');
     }
