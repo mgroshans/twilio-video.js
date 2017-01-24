@@ -1,6 +1,7 @@
 'use strict';
 
 import LocalTrackStats = require('./localtrackstats');
+import {StandardizedTrackStatsReport} from '../webrtc/standardizedtrackstatsreport';
 
 /**
  * Statistics for a {@link LocalVideoTrack}.
@@ -14,7 +15,7 @@ import LocalTrackStats = require('./localtrackstats');
  * @constructor
  */
 class LocalVideoTrackStats extends LocalTrackStats {
-  constructor(trackId: string, statsReport) {
+  constructor(trackId: string, statsReport: StandardizedTrackStatsReport) {
     super(trackId, statsReport);
 
     var captureDimensions = null;

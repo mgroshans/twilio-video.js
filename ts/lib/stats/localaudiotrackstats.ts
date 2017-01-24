@@ -1,6 +1,7 @@
 'use strict';
 
 import LocalTrackStats = require('./localtrackstats');
+import {StandardizedTrackStatsReport} from '../webrtc/standardizedtrackstatsreport';
 
 /**
  * Statistics for a {@link LocalAudioTrack}.
@@ -12,7 +13,7 @@ import LocalTrackStats = require('./localtrackstats');
  * @constructor
  */
 class LocalAudioTrackStats extends LocalTrackStats {
-  constructor(trackId: string, statsReport) {
+  constructor(trackId: string, statsReport: StandardizedTrackStatsReport) {
     super(trackId, statsReport);
 
     Object.defineProperties(this, {

@@ -1,6 +1,7 @@
 'use strict';
 
 import RemoteTrackStats = require('./remotetrackstats');
+import {StandardizedTrackStatsReport} from '../webrtc/standardizedtrackstatsreport';
 
 /**
  * Statistics for a {@link VideoTrack}.
@@ -12,7 +13,7 @@ import RemoteTrackStats = require('./remotetrackstats');
  * @constructor
  */
 class RemoteVideoTrackStats extends RemoteTrackStats {
-  constructor(trackId: string, statsReport) {
+  constructor(trackId: string, statsReport: StandardizedTrackStatsReport) {
     super(trackId, statsReport);
 
     var dimensions = null;

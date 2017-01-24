@@ -4,6 +4,7 @@ import LocalAudioTrackStats = require('./localaudiotrackstats');
 import LocalVideoTrackStats = require('./localvideotrackstats');
 import RemoteAudioTrackStats = require('./remoteaudiotrackstats');
 import RemoteVideoTrackStats = require('./remotevideotrackstats');
+import {StandardizedStatsResponse} from '../webrtc/standardizedstatsresponse';
 
 /**
  * Statistics report for an RTCPeerConnection.
@@ -16,7 +17,7 @@ import RemoteVideoTrackStats = require('./remotevideotrackstats');
  * @constructor
  */
 class StatsReport {
-  constructor(peerConnectionId: string, statsResponse) {
+  constructor(peerConnectionId: string, statsResponse: StandardizedStatsResponse) {
     if (typeof peerConnectionId !== 'string') {
       throw new Error('RTCPeerConnection id must be a string');
     }

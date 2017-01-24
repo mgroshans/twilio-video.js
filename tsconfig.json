@@ -3,7 +3,9 @@
         "outDir": "./lib/",
         "allowJs": true,
         "target": "es5",
-        "module": "commonjs"
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true
     },
     "include": [
         "./ts/lib/**/*"

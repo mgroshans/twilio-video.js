@@ -1,5 +1,7 @@
 'use strict';
 
+import {StandardizedTrackStatsReport} from '../webrtc/standardizedtrackstatsreport';
+
 /**
  * Statistics for a {@link Track}.
  * @property {string} trackId - MediaStreamTrack ID
@@ -12,7 +14,7 @@
  * @constructor
  */
 class TrackStats {
-  constructor(trackId: string, statsReport) {
+  constructor(trackId: string, statsReport: StandardizedTrackStatsReport) {
     if (typeof trackId !== 'string') {
       throw new Error('Track id must be a string');
     }
