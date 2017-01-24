@@ -5,7 +5,9 @@
         "target": "es5",
         "module": "commonjs",
         "moduleResolution": "node",
-        "noImplicitAny": true
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noImplicitThis": true
     },
     "include": [
         "./ts/lib/**/*"
