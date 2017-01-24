@@ -38,6 +38,7 @@
     "selenium-webdriver": "^3.0.1",
     "sinon": "^1.17.7",
     "twilio": "^2.11.1",
+    "typescript": "^2.1.5",
     "uglify-js": "^2.7.5",
     "vinyl-fs": "^2.4.4",
     "vinyl-source-stream": "^1.1.0"
@@ -48,7 +49,7 @@
   "license": "BSD-3-Clause",
   "main": "./lib/index.js",
   "scripts": {
-    "lint": "eslint ./lib",
+    "lint": "eslint ./ts/lib",
     "test:unit": "mocha ./test/unit/index.js",
     "test:integration": "mocha ./test/integration/index.js",
     "test:integration:travis": "node ./scripts/integration.js",
@@ -72,7 +73,7 @@
     "build:js": "node ./scripts/build.js ./src/twilio-video.js ./LICENSE.md ./dist/twilio-video.js",
     "build:min.js": "uglifyjs ./dist/twilio-video.js -o ./dist/twilio-video.min.js --comments \"/^! twilio-video.js/\"",
     "build:test:webrtc": "browserify ./test/webrtc/index.js -o ./test/dist/webrtc.js",
-    "build": "npm-run-all clean build:ts docs cover test:integration build:js build:min.js test:umd",
+    "build": "npm-run-all clean lint build:ts docs cover test:integration build:js build:min.js test:umd",
     "build:travis": "npm-run-all clean lint docs cover test:integration:travis build:ts build:js build:min.js test:umd test:framework",
     "docs": "node ./scripts/docs.js ./dist/docs",
     "clean": "rimraf ./lib ./coverage ./dist ./test/dist/webrtc.js",
